@@ -2,11 +2,11 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Header from 'components/Header';
 import IntroSection from 'components/IntroSection';
-import AboutSection from 'components/AboutSection';
-import MapSection from 'components/MapSection';
 import Footer from 'components/Footer';
+import AboutSection from '../components/AboutSection';
+import MapSection from '../components/MapSection';
 
-const Home: NextPage = () => {
+const Review: NextPage = () => {
   return (
     <>
       <Head>
@@ -17,9 +17,9 @@ const Home: NextPage = () => {
       <div className="page-container">
         <Header />
         <IntroSection
-          home
-          title="Седона — небольшой городок в Аризоне, заслуживающий большего!"
-          desc="Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!"
+          home={false}
+          title="Оставьте свой отзыв"
+          desc="Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях"
         />
         <AboutSection />
         <MapSection />
@@ -29,4 +29,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Review;
